@@ -4,6 +4,11 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 use function Env\env;
 
 /**
+ * Initialize our JSON data variable
+ */
+$result = [];
+
+/**
  * Directory containing all of the site's files
  *
  * @var string
