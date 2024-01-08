@@ -1,0 +1,16 @@
+{
+    "name": "mwender/wp-update-server",
+    "description": "A simple update server that implements the WordPress Update API.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Wender",
+            "email": "michael@michaelwender.com"
+        }
+    ],
+    "require": {
+        "oscarotero/env": "^2.1",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
