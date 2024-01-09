@@ -1,0 +1,16 @@
+.container{ max-width: 980px; margin: 0 auto 20px auto; background-color: #fff; padding: 20px; border-radius: 3px; }
+body{ padding: 20px; font-family: "Open Sans", sans-serif; font-size: 100%; line-height: 1.5; background-color: #eee; color: #32373c; }
+body img{max-width: 100%;}
+body .row{margin-bottom: 1em;}
+.button{background-color: #0085ba; border-color: #0073aa #006799 #006799; box-shadow: 0 1px 0 #006799; color: #fff; text-decoration: none; padding: 0 18px; line-height: 34px; display: inline-block; border-radius: 3px;}
+.button:hover{background-color: #59a1be;}
+table{width: 100%; border-collapse: collapse;}
+table th, table td{padding: 8px;}
+table th{text-align: left; font-weight: normal;}
+table td{font-weight: bold; text-align: right;}
+table tr td, table tr th{border-bottom: 1px solid #eee;}
+table tr:last-child td, table tr:last-child th{border-bottom: none;}
+h1.plugin-title{font-size: 1.5625rem; font-weight: 400; margin: 0;}
+h2{font-size: 1.25rem; font-weight: 600; letter-spacing: .01rem;}
+.byline{color: #78848f;}
+.footer{text-align: center; font-size: .8rem; color: #999;}
