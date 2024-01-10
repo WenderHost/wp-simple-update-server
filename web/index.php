@@ -5,8 +5,11 @@ require_once dirname( __DIR__ ) . '/lib/fns/bootstrap.php';
 use function UpdateServer\utilities\{getLatestPackage};
 $package_info = getLatestPackage();
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Updates Server - Test</title>
   <link rel="stylesheet" href="assets/flexboxgrid.min.css" />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -17,8 +20,8 @@ $package_info = getLatestPackage();
       <div class="col-md-12"><img src="assets/banner-1544x500.jpg" style="width: auto; max-width: 100%;" /></div>
     </div>
     <div class="row">
-      <div class="col-md-2"><img src="assets/icon-256x256.jpg" /></div>
-      <div class="col-md">
+      <div class="col-xs-2 hide-mobile"><img src="assets/icon-256x256.jpg" /></div>
+      <div class="col-xs">
         <h1 class="plugin-title">Your Plugin</h1>
         <span class="byline">By a Plugin Developer</span>
       </div>
@@ -34,7 +37,7 @@ $package_info = getLatestPackage();
           <li>First release.</li>
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-xs-12">
         <table>
           <tr>
             <th style="width: 50%">Version:</th>

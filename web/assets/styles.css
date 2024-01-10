@@ -13,4 +13,11 @@ table tr:last-child td, table tr:last-child th{border-bottom: none;}
 h1.plugin-title{font-size: 1.5625rem; font-weight: 400; margin: 0;}
 h2{font-size: 1.25rem; font-weight: 600; letter-spacing: .01rem;}
 .byline{color: #78848f;}
-.footer{text-align: center; font-size: .8rem; color: #999;}
+.footer{text-align: center; font-size: .8rem; color: #999; margin: 1em auto; max-width: 980px;}
+
+@media(max-width: 720px){
+  body{padding: 0; margin: 0;}
+  .container{margin: 0; padding: 20px 30px;}
+  .hide-mobile{display: none;}
+  .col-xs-12{padding-right: 0; padding-left: 0;}
+}
