@@ -1,6 +1,34 @@
 <?php
 namespace UpdateServer\utilities;
 
+function getReadme($package){
+  $zip = new \ZipArchive();
+  if( $zip->open( $package ) === TRUE ){
+    $readme_content = $zip->getFromName( $_ENV['PACKAGE_SLUG'] . '/README.md' );
+    $zip->close();
+
+    if( $readme_content ){
+      $readme = explode( "\n", $readme_content );
+      foreach( $readme as $key => $line ){
+        if( "" == $line ){
+          $readme_body = array_slice( $readme, $key );
+          break;
+        }
+      }
+    }
+
+    if( is_array( $readme_body ) ){
+      $markdown = implode( "\n", $readme_body );
+      $Parsedown = new \Parsedown();
+      return $Parsedown->text( $markdown );
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+
 function getFileModificationTime($filePath) {
     if (!file_exists($filePath)) {
         return "File does not exist";

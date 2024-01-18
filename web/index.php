@@ -1,8 +1,8 @@
 <?php
-global $allow_download;
+global $allow_download, $webroot_dir;
 require_once dirname( __DIR__ ) . '/lib/fns/bootstrap.php';
 
-use function UpdateServer\utilities\{getLatestPackage};
+use function UpdateServer\utilities\{getLatestPackage,getReadme};
 $package_info = getLatestPackage();
 ?>
 <!DOCTYPE html>
@@ -29,13 +29,7 @@ $package_info = getLatestPackage();
     </div>
     <div class="row">
       <div class="col-md-8">
-        <h2>Description</h2>
-        <p>Describe your plugin here. Be sure to include any pertinent details. Oftentimes this description is the first thing users will read about your plugin.</p>
-        <h2>Changelog</h2>
-        <h3>1.0.0</h3>
-        <ul>
-          <li>First release.</li>
-        </ul>
+        <?= getReadme( $webroot_dir . '/packages/' . $_ENV['PACKAGE_SLUG'] . '_' . $package_info['version'] . '.zip' ) ?>
       </div>
       <div class="col-md-4 col-xs-12">
         <table>

@@ -4,6 +4,10 @@ Implements a simple update server for use with the WordPress Theme/Plugin Update
 
 ## Changelog
 
+### 2.2.0
+
+- Dynamically including the plugin's README.md content.
+
 ### 2.1.0
 
 - Responsive styling for index.php.
@@ -19,5 +23,4 @@ Implements a simple update server for use with the WordPress Theme/Plugin Update
 
 ## Roadmap
 
-- Include the plugin's changelog by providing Markdown parsing for a "changelog.md" file.
 - Remove content from `web/index.php` in favor of `lib/content/` perhaps?
