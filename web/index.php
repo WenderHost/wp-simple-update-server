@@ -10,7 +10,7 @@ $package_info = getLatestPackage();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Updates Server - Test</title>
+  <title>CMC Video Player WordPress Plugin</title>
   <link rel="stylesheet" href="assets/flexboxgrid.min.css" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
@@ -22,8 +22,8 @@ $package_info = getLatestPackage();
     <div class="row">
       <div class="col-xs-2 hide-mobile"><img src="assets/icon-256x256.jpg" /></div>
       <div class="col-xs">
-        <h1 class="plugin-title">Your Plugin</h1>
-        <span class="byline">By a Plugin Developer</span>
+        <h1 class="plugin-title">CMC Video Player</h1>
+        <span class="byline">By a <a href="https://mwender.com">Michael Wender</a></span>
       </div>
       <div class="col-md-3 end-md"><?php if( $allow_download ){ ?><a href="<?= $package_info['package']; ?>" class="button">Download</a><?php } ?></div>
     </div>
