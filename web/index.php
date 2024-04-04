@@ -23,7 +23,7 @@ $package_info = getLatestPackage();
       <div class="col-xs-2 hide-mobile"><img src="assets/icon-256x256.jpg" /></div>
       <div class="col-xs">
         <h1 class="plugin-title">CMC Video Player</h1>
-        <span class="byline">By a <a href="https://mwender.com">Michael Wender</a></span>
+        <span class="byline">By <a href="https://mwender.com">Michael Wender</a></span>
       </div>
       <div class="col-md-3 end-md"><?php if( $allow_download ){ ?><a href="<?= $package_info['package']; ?>" class="button">Download</a><?php } ?></div>
     </div>
