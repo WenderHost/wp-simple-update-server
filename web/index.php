@@ -10,7 +10,7 @@ $package_info = getLatestPackage();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Updates Server - Test</title>
+  <title>Sellers.json Editor</title>
   <link rel="stylesheet" href="assets/flexboxgrid.min.css" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
@@ -22,13 +22,14 @@ $package_info = getLatestPackage();
     <div class="row">
       <div class="col-xs-2 hide-mobile"><img src="assets/icon-256x256.jpg" /></div>
       <div class="col-xs">
-        <h1 class="plugin-title">Your Plugin</h1>
-        <span class="byline">By a Plugin Developer</span>
+        <h1 class="plugin-title">Sellers.json Editor</h1>
+        <span class="byline">By <a href="https://wenmarkdigital.com">Wenmark Digital Solutions</a></span>
       </div>
       <div class="col-md-3 end-md"><?php if( $allow_download ){ ?><a href="<?= $package_info['package']; ?>" class="button">Download</a><?php } ?></div>
     </div>
     <div class="row">
       <div class="col-md-8">
+        <p style="background-color: #eee; padding: .5em; border-radius: 5px;">If you need this plugin for your website, please <a href="https://wenmarkdigital.com/contact/">contact Wenmark Digital Solutions</a>.</p>
         <?= getReadme( $webroot_dir . '/packages/' . $_ENV['PACKAGE_SLUG'] . '_' . $package_info['version'] . '.zip' ) ?>
       </div>
       <div class="col-md-4 col-xs-12">
