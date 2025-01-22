@@ -60,6 +60,6 @@ $package_info = getLatestPackage();
       </div>
     </div>
   </div>
-  <div class="footer">&copy; <?= date('Y') ?>. All rights reserved.</div>
+  <div class="footer">&copy; <?= date('Y') ?> Wenmark Digital Solutions. All rights reserved.</div>
 </body>
 </html>
