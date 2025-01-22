@@ -1,6 +1,6 @@
-# Simple WordPress Update API Server
+# Sellers.json Editor for WordPress API Server
 
-Implements a simple update server for use with the WordPress Theme/Plugin Update API.
+Implements a simple update server for the Sellers.json Editor for WordPress Plugin for use with the WordPress Theme/Plugin Update API.
 
 ## Changelog
 
